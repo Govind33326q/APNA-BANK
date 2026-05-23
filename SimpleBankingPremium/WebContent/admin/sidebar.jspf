@@ -1,0 +1,24 @@
+<aside class="sidebar">
+    <div class="brand">
+        <div class="brand-logo">
+            <% if (logoUrl != null) { %>
+                <img src="<%= logoUrl %>" alt="Logo">
+            <% } else { %>
+                PB
+            <% } %>
+        </div>
+        <div>
+            <h2><%= bankName %></h2>
+            <span>Staff Control</span>
+        </div>
+    </div>
+    <a href="dashboard">Dashboard</a>
+    <a href="customers">Customers</a>
+    <a href="accounts">Accounts</a>
+    <a href="transactions">Transactions</a>
+    <% if ("ADMIN".equals(session.getAttribute("role"))) { %>
+    <a href="staff">Staff Members</a>
+    <a href="settings">Logo Settings</a>
+    <% } %>
+    <a href="../logout">Logout</a>
+</aside>

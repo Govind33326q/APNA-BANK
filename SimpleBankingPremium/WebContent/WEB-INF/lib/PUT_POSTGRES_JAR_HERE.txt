@@ -1,0 +1,2 @@
+Put your PostgreSQL JDBC jar here, for example:
+postgresql-42.7.3.jar
